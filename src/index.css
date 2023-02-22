@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../public/fonts/helvetica/HelveticaNowDisplay-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../public/fonts/helvetica/HelveticaNowDisplay-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../public/fonts/helvetica/HelveticaNowDisplay-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../public/fonts/helvetica/HelveticaNowDisplay-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NeueMetana";
+  src: url("../public/fonts/neue-metana/neuemetananextoutline-black.otf")
+    format("truetype");
+  font-weight: 900;
+  font-style: black;
+}
+
+@font-face {
+  font-family: "NeueMetana";
+  src: url("../public/fonts/neue-metana/neuemetananext-semibold.otf")
+    format("truetype");
+  font-weight: 600;
+  font-style: semibold;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  header {
+    @apply flex items-center max-w-7xl mx-auto px-[3%] py-4;
+  }
+}
+
+@layer components {
+  .padding {
+    @apply max-w-7xl mx-auto px-[3%] py-10 lg:py-20;
+  }
+
+  .nav-links {
+    @apply flex items-center gap-6 text-lg cursor-pointer relative;
+  }
+
+  .nav-links li.active {
+    @apply text-primary-400 relative after:content-[''] after:w-8 after:h-1 after:absolute after:bg-primary-400 after:top-full after:left-0;
+  }
+
+  .button {
+    @apply bg-primary-100 text-white px-4 rounded-full py-1.5 hover:bg-opacity-90 transition-all;
+  }
+
+  .hero-links {
+    @apply text-lg;
+  }
+
+  .hero-links li {
+    @apply flex gap-1 items-center;
+  }
+
+  .stat-links {
+    @apply flex items-center justify-between text-white text-xl;
+  }
+
+  .stat-links li {
+    @apply flex items-center gap-1;
+  }
+
+  .task-links {
+    @apply flex items-center justify-between font-medium text-newblack;
+  }
+
+  .task-links li {
+    @apply flex items-center;
+  }
+
+  .task-links2 {
+    @apply text-base font-medium grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5  gap-8;
+  }
+
+  .task-links2 li {
+    @apply flex items-center gap-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-metana text-center;
+  }
+
+  .mobile-links {
+    @apply inline-flex flex-col space-y-5 items-start justify-start;
+  }
+
+  .mobile-links li {
+    @apply inline-flex space-x-2.5 items-center justify-start;
+  }
+
+  .top-categories-links {
+    @apply flex flex-col gap-4;
+  }
+
+  .top-categories-links li {
+    @apply text-primary-300 text-xl flex items-center gap-1 font-medium;
+  }
+
+  .top-categories-links li:not(.active) {
+    @apply text-white;
+  }
+
+  .custom-clippath {
+    clip-path: polygon(63% 0, 100% 100%, 100% 0);
+  }
+
+  footer ul {
+    @apply flex flex-col gap-2 text-primary-300;
+  }
+
+  footer ul li:first-child {
+    @apply font-bold text-xl;
+  }
 }
