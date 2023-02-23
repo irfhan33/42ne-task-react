@@ -2,8 +2,8 @@ import React from "react";
 
 const FloatingUser = () => {
   return (
-    <div className="bg-[#EAEBED] rounded-[30px] absolute w-[160px] left-[200px] top-[100px] shadow-lg">
-      <div className="border bg-[#21605D] border-white border-1.5 rounded-[30px] p-4 text-white shadow-lg rounded-br-[150px] w-[200px]">
+    <div className="absolute w-fit min-w-[250px] left-[250px] top-[100px] ">
+      <div className="bg-[#21605D] border-white border-2 rounded-[30px] p-4 text-white shadow-lg">
         <div className="flex items-center gap-2 justify-between font-medium">
           <span>Babysitter</span>
           <span className="font-bold text-lg">$15</span>
@@ -128,61 +128,30 @@ const FloatingUser = () => {
               Evening
             </li>
           </ul>
-          <div className="w-[70px] h-[70px] bg-primary-100 rounded-xl rounded-br-none border border-white shadow-lg relative">
+          <div className="w-[70px] h-[70px] bg-primary-100 rounded-xl border border-white shadow-lg relative">
             <img
               src="images/ava.png"
               alt=""
               className="w-full h-full object-cover"
             />
-            <svg
-              width="19"
-              height="19"
-              viewBox="0 0 19 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[90%] top-[90%]"
-            >
-              <path
-                d="M11.5 13.5H12V13V2.62845L18.1495 18.2071L3.24374 13.5H11.5Z"
-                fill="#21605D"
-                stroke="white"
-              />
-            </svg>
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center p-3 text-primary-300 text-sm">
-        <span>{`OPEN - 5 Offer`}</span>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-            stroke="#21605D"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M12 16L16 12L12 8"
-            stroke="#21605D"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M8 12H16"
-            stroke="#21605D"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </div>
+      <svg
+        width="58"
+        height="90"
+        viewBox="0 0 58 90"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="mx-auto mt-2"
+      >
+        <path
+          d="M28.9994 82L27.2768 83.067L28.9994 85.848L30.722 83.067L28.9994 82ZM28.9994 82C30.722 83.067 30.7222 83.0668 30.7224 83.0663L30.7234 83.0647L30.7271 83.0588L30.7409 83.0364L30.7944 82.9498C30.8413 82.8736 30.9105 82.7611 31.0005 82.6142C31.1804 82.3203 31.4436 81.8888 31.7782 81.3355C32.4472 80.229 33.4019 78.6351 34.547 76.6811C36.8362 72.7746 39.8911 67.4212 42.9485 61.6413C46.0025 55.8676 49.0759 49.6364 51.3911 43.9808C53.6694 38.4154 55.3415 33.1125 55.3415 29.3158C55.3415 14.7674 43.5477 2.97368 28.9994 2.97368C14.451 2.97368 2.65728 14.7674 2.65728 29.3158C2.65728 33.1125 4.32936 38.4154 6.60767 43.9808C8.92284 49.6364 11.9963 55.8676 15.0503 61.6413C18.1076 67.4212 21.1625 72.7746 23.4518 76.6811C24.5969 78.6351 25.5515 80.229 26.2206 81.3355C26.5551 81.8888 26.8183 82.3203 26.9983 82.6142C27.0883 82.7611 27.1575 82.8736 27.2044 82.9498L27.2579 83.0364L27.2717 83.0588L27.2753 83.0647L27.2763 83.0663C27.2766 83.0668 27.2768 83.067 28.9994 82Z"
+          fill="#21605D"
+          stroke="white"
+          stroke-width="4.05263"
+        />
+      </svg>
     </div>
   );
 };

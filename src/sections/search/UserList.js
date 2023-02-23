@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+import Footer from "../../layouts/Footer";
 
 const UserList = () => {
   const usersData = [
@@ -239,6 +240,7 @@ const UserList = () => {
         </ul>
       </div>
       <Navigation />
+      <Footer />
     </div>
   );
 };

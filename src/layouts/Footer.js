@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="padding flex flex-col items-center space-y-4 pb-4">
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+      <div className="grid grid-cols-3 gap-3">
         <ul>
           <li>Discover</li>
           <li>How it works</li>

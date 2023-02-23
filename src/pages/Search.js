@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../layouts/Footer";
 import Header from "../layouts/Header";
 import Map from "../sections/search/Map";
 import SearchToolbar from "../sections/search/SearchToolbar";
@@ -12,12 +11,10 @@ const Search = () => {
       <SearchToolbar />
 
       {/* <!-- main --> */}
-      <section className="padding py-4 grid grid-cols-1 md:grid-cols-[300px_1fr] gap-3 h-[1386px]">
+      <section className="padding py-4 grid grid-cols-1 md:grid-cols-[350px_1fr] gap-3 h-[2000px]">
         <UserList />
         <Map />
       </section>
-
-      <Footer />
     </div>
   );
 };
