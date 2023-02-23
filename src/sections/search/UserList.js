@@ -192,11 +192,13 @@ const UserList = () => {
                         {item.time}
                       </li>
                     </ul>
-                    <img
-                      src="images/ava.png"
-                      alt=""
-                      className="shrink-0 w-[70px] object-cover"
-                    />
+                    <div className="w-[70px] h-[70px]">
+                      <img
+                        src="images/ava.png"
+                        alt=""
+                        className="shrink-0 w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="flex justify-between items-center p-4 text-primary-300">
